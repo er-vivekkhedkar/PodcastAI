@@ -19,15 +19,15 @@ export default function About() {
         <div className="space-y-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
-            <p>At PodcastAI, we're revolutionizing the way content creators produce podcasts. Our mission is to make high-quality podcast creation accessible to everyone, regardless of their technical skills or budget.</p>
+            <p>At PodcastAI, we&apos;re revolutionizing the way content creators produce podcasts. Our mission is to make high-quality podcast creation accessible to everyone, regardless of their technical skills or budget.</p>
           </section>
           <section>
             <h2 className="text-2xl font-semibold mb-4">How It Works</h2>
-            <p>PodcastAI uses cutting-edge artificial intelligence to convert your written content into natural-sounding speech. Simply input your script, choose your preferred AI voices, and let our technology do the rest. The result is a professional-quality podcast ready for distribution.</p>
+            <p>PodcastAI uses cutting-edge artificial intelligence to convert your written content into natural sounding speech. Simply input your script, choose your preferred AI voices, and let our technology do the rest. The result is a professional-quality podcast ready for distribution.</p>
           </section>
           <section>
             <h2 className="text-2xl font-semibold mb-4">Our Team</h2>
-            <p>We're a group of passionate technologists, audio engineers, and content creators who believe in the power of podcasting. Our diverse team brings together expertise from various fields to create a truly innovative product.</p>
+            <p>We&apos;re a group of passionate technologists, audio engineers, and content creators who believe in the power of podcasting. Our diverse team brings together expertise from various fields to create a truly innovative product.</p>
           </section>
           <section className="text-center">
             <h2 className="text-2xl font-semibold mb-4">Ready to Get Started?</h2>
