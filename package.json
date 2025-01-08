@@ -45,8 +45,8 @@
     "next-themes": "^0.4.4",
     "openai": "^4.77.3",
     "postcss": "^8.4.27",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hot-toast": "^2.5.1",
     "shadcn-ui": "^0.9.4",
     "tailwind-merge": "^2.6.0",
@@ -60,5 +60,9 @@
     "@typescript-eslint/parser": "^8.19.1",
     "encoding": "^0.1.13",
     "eslint": "^8.57.0"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
