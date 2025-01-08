@@ -25,34 +25,37 @@ export default function ImageSlider() {
   }, [])
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <AnimatePresence initial={false}>
+    <div className="relative w-full h-[400px] overflow-hidden">
+      <AnimatePresence>
         <motion.div
           key={currentIndex}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="absolute inset-0"
-          {...({} as HTMLMotionProps<"div">)}
+          style={{
+            position: 'absolute',
+            inset: 0
+          }}
         >
           <Image
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
             fill
-            priority
             className="object-cover"
+            priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Transform Text into Engaging Podcasts</h1>
-            <p className="text-xl md:text-2xl lg:text-3xl mb-8">Harness the power of AI to generate professional-sounding podcasts from any text in minutes. Revolutionize your content creation process with PodcastAI.</p>
-            <Button asChild size="lg" className="animate-button">
-              <Link href="/generator">Start Creating Your Podcast</Link>
-            </Button>
-          </div>
         </motion.div>
       </AnimatePresence>
+      
+      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Transform Text into Engaging Podcasts</h1>
+        <p className="text-xl md:text-2xl lg:text-3xl mb-8">Harness the power of AI to generate professional-sounding podcasts from any text in minutes. Revolutionize your content creation process with PodcastAI.</p>
+        <Button asChild size="lg" className="animate-button">
+          <Link href="/generator">Start Creating Your Podcast</Link>
+        </Button>
+      </div>
     </div>
   )
 }
