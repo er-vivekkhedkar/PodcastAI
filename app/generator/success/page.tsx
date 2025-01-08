@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, Suspense } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, Play, Pause, Volume2 } from "lucide-react";
@@ -14,6 +14,18 @@ interface AudioTracks {
 }
 
 export default function GenerateSuccess() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-[400px]">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+      </div>
+    }>
+      <SuccessContent />
+    </Suspense>
+  );
+}
+
+function SuccessContent() {
   const [tracks, setTracks] = useState<AudioTracks | null>(null);
   const [activeTab, setActiveTab] = useState<'combined' | 'individual'>('combined');
   const [playing, setPlaying] = useState<string | null>(null);
