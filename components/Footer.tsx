@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="py-4 border-t border-gray-200 dark:border-gray-700 text-center">
-          <p className="text-sm">&copy; 2023 PodcastAI. All rights reserved. | Owner: Vivek Khedkar</p>
+          <p className="text-sm">&copy; 2025 PodcastAI. All rights reserved. | Owner: Vivek Khedkar</p>
         </div>
       </div>
     </footer>
